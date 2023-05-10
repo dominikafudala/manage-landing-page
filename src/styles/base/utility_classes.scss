@@ -1,4 +1,11 @@
 .container {
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.even-cols {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 }
