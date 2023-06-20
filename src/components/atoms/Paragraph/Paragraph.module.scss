@@ -1,0 +1,7 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+.paragraph {
+    color: $clr-neutral-grayish-blue;
+    margin: rem(20) 0;
+}

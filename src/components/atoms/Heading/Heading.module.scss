@@ -1,0 +1,20 @@
+@use 'styles/utils' as *;
+@use 'styles/global' as *;
+
+.heading{
+    color: $clr-primary-blue;
+    line-height: 1.2;
+    font-weight: $fw-bold;
+}
+
+.h1 {
+    font-size: rem(40);
+}
+
+.h2{
+    font-size: rem(30);
+}
+
+.h3{
+    font-size: rem(18);
+}

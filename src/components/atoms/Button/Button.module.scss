@@ -1,0 +1,17 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+.button {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: em(18) em(40);
+    font-size: rem(12);
+    font-weight: $fw-semi-bold;
+    color: white;
+    line-height: 1;
+    border: none;
+    background-color: $clr-primary-red;
+    border-radius: 30px;
+    box-shadow: 0 em(8) em(16) em(-10) $clr-primary-red;
+}

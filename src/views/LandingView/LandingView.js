@@ -14,7 +14,7 @@ const LandingView = () => (
       <section className="even-cols">
         <div>
           <Heading headingType="h1">Bring everyone together to build better products.</Heading>
-          <Paragraph>
+          <Paragraph paddingLimit="padding-limit">
             Manage makes it simple for software teams to plan day-to-day tasks while keeping the
             larger team goals in view.
           </Paragraph>
@@ -27,7 +27,7 @@ const LandingView = () => (
       <section className="even-cols">
         <div>
           <Heading headingType="h2">What&apos;s different about Manage?</Heading>
-          <Paragraph>
+          <Paragraph paddingLimit="padding-limit">
             See how your day-to-day tasks fit into the wider vision. Go from tracking progress at
             the milestone level all the way done to the smallest of details. Never lose sight of the
             bigger picture again.
@@ -67,7 +67,7 @@ const LandingView = () => (
       </section>
       <section className="even-cols">
         <Heading headingType="h2">Simplify how your team works today.</Heading>
-        <Button>Get Started</Button>
+        <Button secondary>Get Started</Button>
       </section>
     </main>
     <Footer />

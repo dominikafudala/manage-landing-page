@@ -1,11 +1,33 @@
+@use 'styles/utils' as *;
+
 .container {
-    max-width: 1440px;
-    padding: 0 100px;
-    margin: 0 auto;
+    $max-width: rem(1100);
+    $padding: rem(16);
+    margin-inline: auto;
+    width: min($max-width, 100% - $padding * 2);
 }
 
 .even-cols {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+
+    @include breakpoint-min('small') {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+        gap: rem(140);
+    }
+}
+
+.padding-limit{
+    padding-right: 37%;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
