@@ -14,4 +14,9 @@
     background-color: $clr-primary-red;
     border-radius: 30px;
     box-shadow: 0 em(8) em(16) em(-10) $clr-primary-red;
+
+    &:hover,
+    &:focus{
+        background-color: $clr-primary-red-light;
+    }
 }

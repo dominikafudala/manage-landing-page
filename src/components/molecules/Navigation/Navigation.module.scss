@@ -1,0 +1,61 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+nav {
+    ul{
+        display: inline-grid;
+        a{
+            text-decoration: none;
+            font-weight: $fw-semi-bold;
+            font-size: rem(14);
+        }
+    }
+
+    &[aria-label="primary"]{
+        ul{
+            grid-auto-flow: column;
+            gap: clamp(rem(8), rem(40), rem(60));
+
+            @include breakpoint-max('small'){
+                $distance: em(40);
+                padding: em(36);
+                grid-auto-flow: row;
+                gap: rem(32);
+                width: calc(100vw - $distance * 2);
+                background-color: white;
+                box-shadow:  0 0 0.75em rgb(0, 0, 0, 0.05);
+                border-radius: rem(4);
+                 }
+
+            li{
+                width: fit-content;
+
+                @include breakpoint-max('small'){
+                    text-align: center;
+                    width: auto;
+                }
+
+                a {
+                    color: $clr-neutral-dark-blue;
+
+                    &:hover,
+                    &:focus{
+                        color: $clr-neutral-grayish-blue;
+                    }
+                }
+            }
+        }
+
+        @include breakpoint-max('small'){
+            display: none;
+
+            &[data-visible="true"]{
+                display: block;
+                position: fixed;
+                top: rem(120);
+                left: 50%;
+                transform: translateX(-50%);
+            }   
+             }
+    }
+}
